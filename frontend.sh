@@ -12,8 +12,8 @@ curl -o /tmp/frontend.zip https://roboshop-artifacts.s3.amazonaws.com/frontend.z
 
 
 echo -e "\e[35m extract frontend content\e[0m" 
-cd /usr/share/nginx/html 
-unzip /tmp/frontend.zip
+cd /usr/share/nginx/html >/tmp/roboshop.log
+unzip /tmp/frontend.zip >/tmp/roboshop.log
 
 #we need copy cofig file
 
