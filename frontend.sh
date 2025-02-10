@@ -1,5 +1,5 @@
 echo -e "\e[33minstall nginx server\e[0m"
-yum install nginx -y >/tmp/roboshop.log
+yum install nginx -y &>>/tmp/roboshop.log
 
 echo -e "\e[32m removing old content\e[0m"
 
